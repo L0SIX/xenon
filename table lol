@@ -1,0 +1,29 @@
+getgenv().Xenon = {
+    Enabled = true,
+    
+    SilentAim = true,
+
+    Prediction = 0.155, -- 155 best pred (universal ping)
+
+    VisibleCheck = true,
+    
+    HitChance = 100,
+
+    Selected = nil,
+    SelectedPart = nil,
+
+    TargetPart = {"HumanoidRootPart"},
+
+    Ignored = {
+        Teams = {
+            {
+                Team = LocalPlayer.Team,
+                TeamColor = LocalPlayer.TeamColor,
+            },
+        },
+        Players = {
+            LocalPlayer,
+            91318356
+        }
+    }
+}
